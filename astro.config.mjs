@@ -9,4 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://thedave04.github.io',
+  base: '/Portfolio',
 });
