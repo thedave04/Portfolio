@@ -15,8 +15,9 @@ import "../styles/global.css";
 				<p>I'm a junior computer science student at Texas A&M University.</p>
 			</section>
 			<section class="mb-10">
-				<h1 class="text-3xl font-bold mb-4 text-center">Projects</h1>
+				<h1 class="text-3xl font-bold mb-4 text-center"> Personal Projects</h1>
 				<hr class="max-w-xl mx-auto mb-10" />
+<!--  ################ Verse Finder ################ -->
 				<div
 					onclick="document.getElementById('VerseFinder').classList.toggle('hidden')"
 					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
@@ -33,20 +34,97 @@ import "../styles/global.css";
 							<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
 						</svg>
 						<h3 class="text-2xl font-bold col-span-6">Verse Finder</h3>
-						<h3 class="text-base font-bold text-right col-span-13">
-							React Native, Expo, TypeScript, AWS Lambda, Python
+						<h3 class="text-sm font-bold text-right col-span-13">
+							React Native, Expo, TypeScript, AWS Lambda, Python, SQLite
 						</h3>
 					</div>
 				</div>
-				<div id="VerseFinder" class="hidden bg-white text-black rounded-lg text-left p-10">
+				<div id="VerseFinder" class="hidden bg-white text-black rounded-lg text-left p-10 mb-10">
 					<div class="grid grid-cols-3 gap-4 mb-4">
-						<img class="object-contain" src="src/assets/VerseFinderPhotos/Menu.png" alt="Menu"/>
-						<img class="object-contain" src="src/assets/VerseFinderPhotos/AnyScreen.png" alt="Menu"/>
-						<img class="object-contain" src="src/assets/VerseFinderPhotos/AnyResults.png" alt="Menu"/>
-						<img class="object-contain" src="src/assets/VerseFinderPhotos/VerseScreen.png" alt="Menu"/>
-						<img class="object-contain" src="src/assets/VerseFinderPhotos/VerseResults.png" alt="Menu"/>
+						<div>
+							<ul class="list-none pr-5">
+								<li class="mb-10">- A cross-platform mobile app that allows users to find Bible verses similar to other verses or based on specific topics.</li>
+								<li>- Uses Sentence Transformers' all-MiniLM-L6-v2 pretrained sentence embedding model to map verses to vectors.</li>
+							</ul>
+						</div>
+						<img class="object-contain" src="images/VerseFinderPhotos/Menu.png" alt="Menu"/>
+						<img class="object-contain" src="images/VerseFinderPhotos/AnyScreen.png" alt="AnyScreen"/>
+						<img class="object-contain" src="images/VerseFinderPhotos/AnyResults.png" alt="AnyResults"/>
+						<img class="object-contain" src="images/VerseFinderPhotos/VerseScreen.png" alt="VerseScreen"/>
+						<img class="object-contain" src="images/VerseFinderPhotos/VerseResults.png" alt="VerseResults"/>
 					</div>
 				</div>
+<!--  ################ Connect Four ################ -->
+				<div
+					onclick="document.getElementById('ConnectFour').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-6">Connect Four</h3>
+						<h3 class="text-sm font-bold text-right col-span-13">
+							Java
+						</h3>
+					</div>
+				</div>
+				<div id="ConnectFour" class="hidden bg-white text-black rounded-lg text-left p-10 mb-10">
+					<div class="grid grid-cols-3 gap-4 mb-4">
+						<div>
+							<ul class="list-none pr-5">
+								<li class="mb-10">- A classic Connect Four game with both a single-player and double-player mode.</li>
+								<li>- I implemented a single-player mode using a Minimax algorithm including alpha-beta pruning optimization.</li>
+							</ul>
+						</div>
+						<img class="object-contain" src="images/ConnectFourPhotos/Start.png" alt="Screen1"/>
+						<img class="object-contain" src="images/ConnectFourPhotos/End.png" alt="Screen2"/>
+					</div>
+				</div>
+<!--  ################ Free Kick Bros ################ -->
+				<div
+					onclick="document.getElementById('FreeKickBros').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-6">Free Kick Bros</h3>
+						<h3 class="text-sm font-bold text-right col-span-13">
+							Unity, C#
+						</h3>
+					</div>
+				</div>
+				<div id="FreeKickBros" class="hidden bg-white text-black rounded-lg text-left p-10 mb-10">
+					<div class="grid grid-cols-2 gap-4 mb-4">
+						<div class="col-span-2">
+							<ul class="list-none pr-5">
+								<li class="mb-10">- Free Kick Bros is a soccer-themed puzzle game I created my senior year of high school for a Technology Student Association state competition where it won top 3 in video game design.</li>
+								<li class="mb-10"><span>- It is hosted <a class="underline" href="https://thedave04.github.io/FreeKickBros/" target="_blank">here</a> on GitHub Pages.</span></li>
+							</ul>
+						</div>
+						<img class="object-contain mb-10" src="images/FreeKickBrosPhotos/FinalLevel.png" alt="FinalLevel"/>
+						<img class="object-contain mb-10" src="images/FreeKickBrosPhotos/ClockLevel.png" alt="ClockLevel"/>
+						<img class="object-contain" src="images/FreeKickBrosPhotos/Maze.png" alt="MazeLevel"/>
+						<img class="object-contain" src="images/FreeKickBrosPhotos/EarlyLevel.png" alt="EarlyLevel"/>
+					</div>
+				</div>
+<!--  ################ End ################ -->
 			</section>
 		</main>
 	</body>
