@@ -12,19 +12,40 @@ import "../styles/global.css";
 		<main class="flex flex-col max-w-4xl mx-auto pt-70">
 			<section class="mb-30 text-center">
 				<h1 class="text-5xl font-bold mb-4">Howdy, I'm David Ambriz.</h1>
-				<p>
-					I'm a junior computer science student at Texas A&M University.
-				</p>
+				<p>I'm a junior computer science student at Texas A&M University.</p>
 			</section>
 			<section class="mb-10">
 				<h1 class="text-3xl font-bold mb-4 text-center">Projects</h1>
-				<hr class="max-w-xl  mx-auto mb-10"/>
-				<div class="bg-white text-black rounded-full text-left p-10">
-					<div class="grid grid-cols-3 gap-4 mb-4">
-						<h3 class="text-2xl font-bold mb-2 mt-4">Verse Finder</h3>
-						<h3 class="text-base font-bold mb-2 mt-4 text-right col-span-2">React Native, Expo, TypeScript, AWS Lambda, Python</h3>
+				<hr class="max-w-xl mx-auto mb-10" />
+				<div
+					onclick="document.getElementById('VerseFinder').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-6">Verse Finder</h3>
+						<h3 class="text-base font-bold text-right col-span-13">
+							React Native, Expo, TypeScript, AWS Lambda, Python
+						</h3>
 					</div>
-					<p>Images</p>
+				</div>
+				<div id="VerseFinder" class="hidden bg-white text-black rounded-lg text-left p-10">
+					<div class="grid grid-cols-3 gap-4 mb-4">
+						<img class="object-contain" src="src/assets/VerseFinderPhotos/Menu.png" alt="Menu"/>
+						<img class="object-contain" src="src/assets/VerseFinderPhotos/AnyScreen.png" alt="Menu"/>
+						<img class="object-contain" src="src/assets/VerseFinderPhotos/AnyResults.png" alt="Menu"/>
+						<img class="object-contain" src="src/assets/VerseFinderPhotos/VerseScreen.png" alt="Menu"/>
+						<img class="object-contain" src="src/assets/VerseFinderPhotos/VerseResults.png" alt="Menu"/>
+					</div>
 				</div>
 			</section>
 		</main>
