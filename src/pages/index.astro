@@ -17,6 +17,39 @@ import "../styles/global.css";
 			<section class="mb-10">
 				<h1 class="text-3xl font-bold mb-4 text-center"> Personal Projects</h1>
 				<hr class="max-w-xl mx-auto mb-10" />
+<!--  ################ CaTalog ################ -->
+				<div
+					onclick="document.getElementById('CaTalog').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-9">CaTalog <i style="color: maroon">(In Progress)</i></h3>
+						<h3 class="text-sm font-bold text-right col-span-10">
+							React, TypeScript, Node.js, Electron, SQLite
+						</h3>
+					</div>
+				</div>
+				<div id="CaTalog" class="hidden bg-white text-black rounded-lg text-left p-10 mb-10">
+					<div class="grid grid-cols-2 gap-4 mb-4">
+						<div class="col-span-2">
+							<ul class="list-none pr-5">
+								<li class="mb-10">- A desktop app I am creating for my mom to help her manage invoices, payroll, and other business-related tasks instead of relying on paper, spreadsheets, and manual calculations.</li>
+							</ul>
+						</div>
+						<img class="object-contain" src="/Portfolio/images/CaTalog/Invoices.png" alt="Screen1"/>
+						<img class="object-contain" src="/Portfolio/images/CaTalog/Payroll.png" alt="Screen2"/>
+					</div>
+				</div>
 <!--  ################ Verse Finder ################ -->
 				<div
 					onclick="document.getElementById('VerseFinder').classList.toggle('hidden')"
@@ -47,11 +80,11 @@ import "../styles/global.css";
 								<li>- Uses Sentence Transformers' all-MiniLM-L6-v2 pretrained sentence embedding model to map verses to vectors.</li>
 							</ul>
 						</div>
-						<img class="object-contain" src="images/VerseFinderPhotos/Menu.png" alt="Menu"/>
-						<img class="object-contain" src="images/VerseFinderPhotos/AnyScreen.png" alt="AnyScreen"/>
-						<img class="object-contain" src="images/VerseFinderPhotos/AnyResults.png" alt="AnyResults"/>
-						<img class="object-contain" src="images/VerseFinderPhotos/VerseScreen.png" alt="VerseScreen"/>
-						<img class="object-contain" src="images/VerseFinderPhotos/VerseResults.png" alt="VerseResults"/>
+						<img class="object-contain" src="/Portfolio/images/VerseFinderPhotos/Menu.png" alt="Menu"/>
+						<img class="object-contain" src="/Portfolio/images/VerseFinderPhotos/AnyScreen.png" alt="AnyScreen"/>
+						<img class="object-contain" src="/Portfolio/images/VerseFinderPhotos/AnyResults.png" alt="AnyResults"/>
+						<img class="object-contain" src="/Portfolio/images/VerseFinderPhotos/VerseScreen.png" alt="VerseScreen"/>
+						<img class="object-contain" src="/Portfolio/images/VerseFinderPhotos/VerseResults.png" alt="VerseResults"/>
 					</div>
 				</div>
 <!--  ################ Connect Four ################ -->
@@ -84,8 +117,8 @@ import "../styles/global.css";
 								<li>- I implemented a single-player mode using a Minimax algorithm including alpha-beta pruning optimization.</li>
 							</ul>
 						</div>
-						<img class="object-contain" src="images/ConnectFourPhotos/Start.png" alt="Screen1"/>
-						<img class="object-contain" src="images/ConnectFourPhotos/End.png" alt="Screen2"/>
+						<img class="object-contain" src="/Portfolio/images/ConnectFourPhotos/Start.png" alt="Screen1"/>
+						<img class="object-contain" src="/Portfolio/images/ConnectFourPhotos/End.png" alt="Screen2"/>
 					</div>
 				</div>
 <!--  ################ Free Kick Bros ################ -->
@@ -118,10 +151,10 @@ import "../styles/global.css";
 								<li class="mb-10"><span>- It is hosted <a class="underline" href="https://thedave04.github.io/FreeKickBros/" target="_blank">here</a> on GitHub Pages.</span></li>
 							</ul>
 						</div>
-						<img class="object-contain mb-10" src="images/FreeKickBrosPhotos/FinalLevel.png" alt="FinalLevel"/>
-						<img class="object-contain mb-10" src="images/FreeKickBrosPhotos/ClockLevel.png" alt="ClockLevel"/>
-						<img class="object-contain" src="images/FreeKickBrosPhotos/Maze.png" alt="MazeLevel"/>
-						<img class="object-contain" src="images/FreeKickBrosPhotos/EarlyLevel.png" alt="EarlyLevel"/>
+						<img class="object-contain mb-10" src="/Portfolio/images/FreeKickBrosPhotos/FinalLevel.png" alt="FinalLevel"/>
+						<img class="object-contain mb-10" src="/Portfolio/images/FreeKickBrosPhotos/ClockLevel.png" alt="ClockLevel"/>
+						<img class="object-contain" src="/Portfolio/images/FreeKickBrosPhotos/Maze.png" alt="MazeLevel"/>
+						<img class="object-contain" src="/Portfolio/images/FreeKickBrosPhotos/EarlyLevel.png" alt="EarlyLevel"/>
 					</div>
 				</div>
 <!--  ################ End ################ -->
