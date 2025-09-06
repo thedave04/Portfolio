@@ -1,1 +1,71 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-typewriter: typewriter 3s steps(30) 1s 1 normal both;
+  --animate-blink: blink 0.7s step-end infinite;
+
+  @keyframes typewriter {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 24ch;
+    }
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      border-color: black;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes moveStars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -500px -500px;
+    }
+  }
+}
+
+@layer utilities {
+  /* The main starfield container */
+  .starfield::before,
+  .starfield::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-repeat: repeat;
+    background-size: 500px 500px;
+    animation: moveStars 200s linear infinite;
+    z-index: -1;
+  }
+
+  /* Layer 1 — slower background stars */
+  .starfield::before {
+  background-image: radial-gradient(circle 2px, white 100%, transparent 0);
+  background-size: 150px 150px;
+  opacity: 0.6;
+  }
+
+  /* Layer 2 — twinkling stars */
+  .starfield::after {
+  background-image:
+    radial-gradient(circle 2px, white 100%, transparent 0),
+    radial-gradient(circle 2px, white 100%, transparent 0),
+    radial-gradient(circle 1.5px, white 100%, transparent 0);
+  background-position: 50px 50px, 150px 200px, 300px 100px;
+  }
+}
