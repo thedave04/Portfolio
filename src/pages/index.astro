@@ -42,11 +42,11 @@ import "../styles/global.css";
 								stroke-linejoin="round"
 								d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
 						</svg>
-						<h3 class="text-2xl font-bold col-span-9">
+						<h3 class="text-2xl font-bold col-span-8">
 							CaTalog <i style="color: maroon">(In Progress)</i>
 						</h3>
-						<h3 class="text-sm font-bold text-right col-span-10">
-							React, TypeScript, Node.js, Electron, SQLite
+						<h3 class="text-sm font-bold text-right col-span-11">
+							React, Express.js, Node.js, PostgreSQL, TypeScript
 						</h3>
 					</div>
 				</div>
@@ -54,30 +54,30 @@ import "../styles/global.css";
 					id="CaTalog"
 					class="hidden bg-white text-black rounded-lg text-left p-10 mb-10"
 				>
-					<div class="grid grid-cols-2 gap-4 mb-4">
-						<div class="col-span-2">
+					<div class="grid grid-cols-1 gap-4 mb-4">
+						<div class="col-span-1">
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									- A cross-platform desktop bookkeeping
-									application I am creating to be used to help
+									A cat-themed bookkeeping web application
+									I am creating to be used to help
 									better manage the family's small business
 									instead of relying on paper, spreadsheets,
 									and manual calculations.
 								</li>
 								<li class="mb-10">
-									- It features invoice and payroll
+									It features invoice and payroll
 									management.
 								</li>
 							</ul>
 						</div>
 						<img
 							class="object-contain"
-							src="/Portfolio/images/CaTalog/Invoices.png"
+							src="/Portfolio/images/CaTalog/Payroll.png"
 							alt="Screen1"
 						/>
 						<img
 							class="object-contain"
-							src="/Portfolio/images/CaTalog/Payroll.png"
+							src="/Portfolio/images/CaTalog/PayrollGroups.png"
 							alt="Screen2"
 						/>
 					</div>
@@ -118,12 +118,12 @@ import "../styles/global.css";
 						<div>
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									- A cross-platform mobile app that allows
+									A cross-platform mobile app that allows
 									users to find Bible verses similar to other
 									verses or based on specific topics.
 								</li>
 								<li>
-									- Uses Sentence Transformers'
+									Uses Sentence Transformers'
 									all-MiniLM-L6-v2 pretrained sentence
 									embedding model to map verses to vectors.
 								</li>
@@ -191,11 +191,11 @@ import "../styles/global.css";
 						<div>
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									- A classic Connect Four game with both a
+									A classic Connect Four game with both a
 									single-player and double-player mode.
 								</li>
 								<li>
-									- I implemented a single-player mode using a
+									I implemented a single-player mode using a
 									Minimax algorithm including alpha-beta
 									pruning optimization.
 								</li>
@@ -248,7 +248,7 @@ import "../styles/global.css";
 						<div class="col-span-2">
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									- Free Kick Bros is a soccer-themed puzzle
+									Free Kick Bros is a soccer-themed puzzle
 									game I created my senior year of high school
 									for a Technology Student Association state
 									competition where it won top 3 in video game
@@ -256,7 +256,7 @@ import "../styles/global.css";
 								</li>
 								<li class="mb-10">
 									<span
-										>- It is hosted <a
+										>It is hosted <a
 											class="underline"
 											href="https://thedave04.github.io/FreeKickBros/"
 											target="_blank">here</a
@@ -287,6 +287,55 @@ import "../styles/global.css";
 					</div>
 				</div>
 				<!--  ################ End ################ -->
+				<h1 class="text-3xl font-bold mt-20 mb-4 text-center">
+					Class Projects
+				</h1>
+				<hr class="max-w-xl mx-auto mb-10" />
+				<!--  ################ Panda Express POS ################ -->
+				<div
+					onclick="document.getElementById('PandaExpressPOS').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-8">
+							Panda Express POS
+						</h3>
+						<h3 class="text-sm font-bold text-right col-span-11">
+							React, Go, PostgreSQL, JavaScript
+						</h3>
+					</div>
+				</div>
+				<div
+					id="PandaExpressPOS"
+					class="hidden bg-white text-black rounded-lg text-left p-10 mb-10"
+				>
+					<div class="grid grid-cols-1 gap-4 mb-4">
+						<div class="col-span-1">
+							<ul class="list-none pr-5">
+								<li class="mb-10">
+									Collaborated with a team of four students to develop a point-of-sale software 
+									intended for Panda Express with React, Go, and PostgreSQL.
+								</li>
+								<li class="mb-10">
+									Primarily in charge of implementing manager reports and employee and inventory tracking.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 	</body>
