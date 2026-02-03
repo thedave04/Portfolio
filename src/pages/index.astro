@@ -346,6 +346,63 @@ import "../styles/global.css";
 						/>
 					</div>
 				</div>
+				<!--  ################ BookStore ################ -->
+				<div
+					onclick="document.getElementById('BookStore').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-8">
+							The 12th Library
+						</h3>
+						<h3 class="text-sm font-bold text-right col-span-11">
+							Java Swing, Flask, MySQL, Python
+						</h3>
+					</div>
+				</div>
+				<div
+					id="BookStore"
+					class="hidden bg-white text-black rounded-lg text-left p-10 mb-10"
+				>
+					<div class="grid grid-cols-1 gap-4 mb-4">
+						<div class="col-span-1">
+							<ul class="list-none pr-5">
+								<li class="mb-10">
+									Created a desktop application designed to model an online bookstore including both customer
+									and manager functionalities using Java Swing for the frontend and Flask with MySQL for the backend.
+								</li>
+							</ul>
+						</div>
+						<img
+							class="object-contain"
+							src="/Portfolio/images/BookStore/BookStoreLogin.png"
+							alt="BookStoreLogin"
+						/>
+						<img
+							class="object-contain"
+							src="/Portfolio/images/BookStore/BookStoreCustomer.png"
+							alt="BookStoreCustomer"
+						/>
+						<img
+							class="object-contain"
+							src="/Portfolio/images/BookStore/BookStoreManager.png"
+							alt="BookStoreManager"
+						/>
+					</div>
+				</div>
 			</section>
 		</main>
 	</body>
