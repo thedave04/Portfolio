@@ -1,24 +1,56 @@
 ---
 import "../styles/global.css";
-
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/x-icon" href="/Portfolio/images/AppIcon.png" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/Portfolio/images/AppIcon.png"
+		/>
 		<title>David Ambriz | Portfolio</title>
 	</head>
 	<body class="relative bg-black text-white font-mono starfield min-h-screen">
+		<img
+			src="/Portfolio/images/AppIcon.png"
+			alt="App Icon"
+			class="fixed top-4 right-4 w-25 h-25 z-50"
+		/>
 		<main class="relative flex flex-col max-w-4xl mx-auto pt-70">
-			<section class="mb-30 text-center">
-				<h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 whitespace-nowrap overflow-hidden">
-					<span class="inline-block animate-[var(--animate-typewriter)] overflow-hidden">Howdy, I'm David Ambriz.</span><span class="inline-block border-r-4 h-[1em] animate-[var(--animate-blink)]"></span>
+			<section class="mb-15 text-center">
+				<img
+					src="/Portfolio/images/Headshot.jpeg"
+					alt="Profile Picture"
+					class="rounded-full w-50 h-50 mx-auto mb-12 object-cover"
+				/>
+				<h1
+					class="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 whitespace-nowrap overflow-hidden"
+				>
+					<span
+						class="inline-block animate-[var(--animate-typewriter)] overflow-hidden"
+						>Howdy, I'm David Ambriz.</span
+					><span
+						class="inline-block border-r-4 h-[1em] animate-[var(--animate-blink)]"
+					></span>
 				</h1>
 				<p>
-					I'm a junior computer science student at Texas A&M University.
+					I'm a junior computer science student at Texas A&M
+					University.
 				</p>
+				<div class="bg-white text-black rounded-full mt-8 inline-flex items-center gap-2 px-6 py-3">
+					<a
+						href="https://www.linkedin.com/in/davidambriz"
+						target="_blank"
+						id="linkedin-link"
+						class="font-bold text-lg"
+					>LinkedIn</a>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M14 5a1 1 0 1 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V6.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L17.586 5zM3 7a2 2 0 0 1 2-2h5a1 1 0 1 1 0 2H5v12h12v-5a1 1 0 1 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+					</svg>
+				</div>
 			</section>
 			<section class="mb-10">
 				<h1 class="text-3xl font-bold mb-4 text-center">
@@ -60,15 +92,14 @@ import "../styles/global.css";
 						<div class="col-span-1">
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									A cat-themed bookkeeping web application
-									I am creating to be used to help
-									better manage the family's small business
-									instead of relying on paper, spreadsheets,
-									and manual calculations.
+									A cat-themed bookkeeping web application I
+									am creating to be used to help better manage
+									the family's small business instead of
+									relying on paper, spreadsheets, and manual
+									calculations.
 								</li>
 								<li class="mb-10">
-									It features invoice and payroll
-									management.
+									It features invoice and payroll management.
 								</li>
 							</ul>
 						</div>
@@ -104,11 +135,12 @@ import "../styles/global.css";
 								d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
 						</svg>
 						<h3 class="text-2xl font-bold col-span-6">
-							Verse Finder
+							VerseFinder
 						</h3>
 						<h3 class="text-sm font-bold text-right col-span-13">
-							React Native, Expo, TypeScript, AWS Lambda, Python, SQLite
-							<br>React, FastAPI
+							React Native, Expo, TypeScript, AWS Lambda, Python,
+							SQLite
+							<br />React, FastAPI
 						</h3>
 					</div>
 				</div>
@@ -120,17 +152,24 @@ import "../styles/global.css";
 						<div>
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									Initially created a cross-platform mobile app that allows
-									users to find Bible verses similar to other
-									verses or based on specific topics.
+									Initially created a cross-platform mobile
+									app that allows users to find Bible verses
+									similar to other verses or based on specific
+									topics.
 								</li>
 								<li class="mb-10">
-									Later developed into a web application with React and FastAPI and deployed <a style="color: blue; text-decoration: underline;" href="https://versefinder.netlify.app/">here</a>.
+									Later developed into a web application with
+									React and FastAPI and deployed <a
+										style="color: blue; text-decoration: underline;"
+										href="https://versefinder.netlify.app/"
+										target="_blank"
+										>here</a
+									>.
 								</li>
 								<li>
-									Uses Sentence Transformers'
-									all-MiniLM-L6-v2 pretrained sentence
-									embedding model to map verses to vectors.
+									Uses Sentence Transformers' all-MiniLM-L6-v2
+									pretrained sentence embedding model to map
+									verses to vectors.
 								</li>
 							</ul>
 						</div>
@@ -179,7 +218,7 @@ import "../styles/global.css";
 							Connect Four
 						</h3>
 						<h3 class="text-sm font-bold text-right col-span-13">
-							Java
+							Java Swing
 						</h3>
 					</div>
 				</div>
@@ -260,7 +299,8 @@ import "../styles/global.css";
 											class="underline text-blue-600"
 											href="https://thedave04.github.io/FreeKickBros/"
 											target="_blank">here</a
-										> on GitHub Pages.</span>
+										> on GitHub Pages.</span
+									>
 								</li>
 							</ul>
 						</div>
@@ -326,11 +366,15 @@ import "../styles/global.css";
 						<div class="col-span-1">
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									Collaborated with three other students to develop a point-of-sale software 
-									intended for Panda Express with React, Go, and PostgreSQL using the Agile Scrum methodology.
+									Collaborated with three other students to
+									develop a point-of-sale software intended
+									for Panda Express with React, Go, and
+									PostgreSQL using the Agile Scrum
+									methodology.
 								</li>
 								<li class="mb-10">
-									Primarily in charge of implementing manager reports and employee and inventory tracking.
+									Primarily in charge of implementing manager
+									reports and employee and inventory tracking.
 								</li>
 							</ul>
 						</div>
@@ -381,8 +425,11 @@ import "../styles/global.css";
 						<div class="col-span-1">
 							<ul class="list-none pr-5">
 								<li class="mb-10">
-									Created a desktop application designed to model an online bookstore including both customer
-									and manager functionalities using Java Swing for the frontend and Flask with MySQL for the backend.
+									Created a desktop application designed to
+									model an online bookstore including both
+									customer and manager functionalities using
+									Java Swing for the frontend and Flask with
+									MySQL for the backend.
 								</li>
 							</ul>
 						</div>
