@@ -1,0 +1,57 @@
+<!--  ################ Connect Four ################ -->
+				<div
+					onclick="document.getElementById('ConnectFour').classList.toggle('hidden')"
+					class="bg-white text-black rounded-full text-left p-10 mb-10 cursor-pointer"
+				>
+					<div class="grid grid-cols-20 gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+						</svg>
+						<h3 class="text-2xl font-bold col-span-6">
+							Connect Four
+						</h3>
+						<h3 class="text-sm font-bold text-right col-span-13">
+							Java Swing
+						</h3>
+					</div>
+				</div>
+				<div
+					id="ConnectFour"
+					class="hidden bg-white text-black rounded-lg text-left p-10 mb-10"
+				>
+					<div class="grid grid-cols-3 gap-4 mb-4">
+						<div>
+							<ul class="list-none pr-5">
+								<li class="mb-10">
+									A classic Connect Four game with both a
+									single-player and double-player mode.
+								</li>
+								<li>
+									I implemented a single-player mode using a
+									Minimax algorithm including alpha-beta
+									pruning optimization.
+								</li>
+							</ul>
+						</div>
+						<img
+							class="object-contain"
+							src="/Portfolio/images/ConnectFourPhotos/Start.png"
+							alt="Screen1"
+						/>
+						<img
+							class="object-contain"
+							src="/Portfolio/images/ConnectFourPhotos/End.png"
+							alt="Screen2"
+						/>
+					</div>
+				</div>
