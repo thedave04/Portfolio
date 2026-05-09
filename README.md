@@ -1,5 +1,5 @@
 # Link
-https://thedave04.github.io/Portfolio/
+[Click Here](https://thedave04.github.io/Portfolio/)
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
